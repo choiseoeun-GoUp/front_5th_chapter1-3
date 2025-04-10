@@ -1,4 +1,5 @@
 {
+  "homepage": "https://choiseoeun-goup.github.io/front_5th_chapter1-3/",
   "name": "front-5th-chapter1-3",
   "private": true,
   "version": "0.0.0",
@@ -19,7 +20,9 @@
     "test:basic": "vitest basic",
     "test:advanced": "vitest advanced",
     "test:ui": "vitest --ui",
-    "prepare": "husky"
+    "prepare": "husky",
+    "predeploy": "pnpm run build",
+     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^18.3.1",
